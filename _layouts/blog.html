@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<div class="banner">
+  <h1 class="banner-title">{{page.title}}</h1>
+  <h4 class="banner-description">{{page.description}}</h4>
+</div>
+
+<main class="blog container">
+  {% if site.posts == null %}
+    <h3 class="notfound-title">No posts found</h3>
+    <p class="notfound-sad"><i class="far fa-sad-tear"></i></p>
+    <p class="notfound-desc">I'll bring more news soon!</p>
+  {% else %}
+  <section class="blog-list">
+    {% for post in site.posts %}
+      <article class="blog-item">
+          <div class="blog-item-wrapper">
+            <a href="{{ post.url }}">
+              <header>{{ post.title }} </header>
+            </a>
+            <main>{{ post.description }}</main>
+            <footer>Posted in {{ post.date | date: '%m/%d/%Y' }} in category <span>{{ post.categorie }}</span></footer>
+          </div>
+      </article>
+    {% endfor %}
+  </section>
+  {% endif %}
+</main>

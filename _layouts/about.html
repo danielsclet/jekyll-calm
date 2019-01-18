@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<div class="banner">
+  <h1 class="banner-title">{{page.title}}</h1>
+  <h4 class="banner-description">{{page.description}}</h4>
+</div>
+
+<main class="container perfil">
+  <img class="perfil-image" src="/{{ page.image_path }}">
+  <p class="perfil-description">{{ site.largeDescription }}</p>
+  <section class="perfil-interets-skills">
+    <ul class="perfil-skills">
+      <li class="perfil-skill">Skills</li>
+      {% for skill in page.skills %}
+      <li class="perfil-skill">{{skill}}</li>
+      {% endfor %}
+    </ul>
+    <ul class="perfil-interets">
+      <li class="perfil-interet">Interests</li>
+      {% for interet in page.interets %}
+      <li class="perfil-interet">{{interet}}</li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="perfil-formations-experiences">
+    <ul class="perfil-formations">
+      <li class="perfil-formation">Formation</li>
+      {% for formation in page.formations %}
+      <li class="perfil-formation">
+        <h4>{{formation.name}}</h4>
+        <p>{{formation.course}}</p>
+        <i>{{formation.from_to}}</i>
+      </li>
+      {% endfor %}
+    </ul>
+    <ul class="perfil-experiences">
+      <li class="perfil-experience">Experience</li>
+      {% for experience in page.experiences %}
+      <li class="perfil-experience">
+        <h4>{{experience.name}}</h4>
+        <p>{{experience.company}}</p>
+        <i>{{experience.from_to}}</i>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+</main>

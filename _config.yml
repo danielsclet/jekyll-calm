@@ -1,0 +1,29 @@
+# Title of blog
+title: Daniel Santos
+email: danielsc.let@gmail.com
+
+# About me page description 
+largeDescription: >-
+  Currently attending Information Systems, I created this space to share what I am learning and some of my opinions. I will focus on JavaScript development, whether in the Back-End with NodeJS or in Front-End with Vuejs and also in mobile development with Flutter. Hope you like it!
+
+# Social profiles
+linkedin: https://www.linkedin.com/in/danscz/
+github: https://github.com/danielsclet
+instagram: https://www.instagram.com/_danielscz/
+
+# Site url
+url: "https://danielsclet.github.io"
+
+# Langague
+lang: pt-br
+
+# Jekyll options
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-autoprefixer
+autoprefixer:
+  only_production: true
+sass:
+  style: compressed

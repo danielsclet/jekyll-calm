@@ -1,0 +1,49 @@
+@media screen and (max-width: 1440px) {}
+
+@media screen and (max-width: 1024px) {
+  // Geral
+  .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  // About page
+  .perfil {
+    padding-bottom: 100px;
+  }
+
+  .perfil-image {
+    margin: -105px auto 100px auto;
+  }
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 425px) {
+
+  // Components
+  .banner .banner-title {
+    font-size: 2em !important;
+  }
+
+  .banner .banner-description {
+    font-size: 1em !important;
+  }
+
+  .header-pages {
+    display: none !important;
+  }
+
+  .mobile-menu-btn {
+    display: block !important;
+  }
+
+  .perfil-skills, .perfil-interets, .perfil-formations, .perfil-experiences {
+    width: 100% !important;
+
+    &:first-child {
+      border: none !important;
+      margin-bottom: 50px;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+// Variables
+$color-white: #FFFFFF;
+$color-black: #4e4a4e;
+$color-grey: #9b9999;
+$color-blue: #003355;
+
+// Global styles
+@import "global.scss";
+
+// Components
+@import "components/post_header.scss";
+@import "components/footer.scss";
+@import "components/header.scss";
+@import "components/mobile-menu.scss";
+
+// Pages
+@import "pages/blog.scss";
+@import "pages/about.scss";
+@import "pages/post.scss";
+@import "pages/page404.scss";
+
+// Highlight code snippet
+@import "highlighting.scss";
+
+// Responsive rules
+@import "responsive.scss";
