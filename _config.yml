@@ -7,12 +7,38 @@ largeDescription: >-
   Currently attending Information Systems, I created this space to share what I am learning and some of my opinions. I will focus on JavaScript development, whether in the Back-End with NodeJS or in Front-End with Vuejs and also in mobile development with Flutter. Hope you like it!
 
 # Social profiles
-linkedin: https://www.linkedin.com/in/danscz/
-github: https://github.com/danielsclet
-instagram: https://www.instagram.com/_danielscz/
+linkedin: https://www.linkedin.com/
+github: https://github.com/
+instagram: https://www.instagram.com/
+
+# About page informations
+skills:
+- HTML/Pug
+- CSS/SCSS
+- Javascript
+- NodeJS
+- PHP
+- NoSQL/SQL
+- Git, Docker, Gulp...
+interets:
+- AdonisJs
+- Laravel
+- ReactJs/ReactNative
+- Flutter
+formations:
+- name: University Estácio de Sá
+  course: Graduation in Information Systems
+  from_to: 2018 - 2022
+- name: ETEC Polivalente
+  course: Computer Technician
+  from_to: 2015 - 2017
+experiences:
+- name: Programmer jr
+  company: Sunset Solutions
+  from_to: Dez 2017 - Hoje
 
 # Site url
-url: "https://danielsclet.github.io"
+url: "localhost"
 
 # Langague
 lang: pt-br
@@ -23,7 +49,9 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-autoprefixer
+
 autoprefixer:
   only_production: true
+
 sass:
   style: compressed

@@ -30,14 +30,12 @@
       <main class="post container">
         {{content}}
   
-        <div class="PageNavigation">
-          {% if page.previous.url %}
-            <a class="prev animsition-link" data-animsition-out-class="fade-out-right" href="{{ page.previous.url }}">Previous</a>
-          {% endif %}
-          {% if page.next.url %}
-            <a class="next animsition-link" data-animsition-out-class="fade-out-left" href="{{ page.next.url }}">Next</a>
-          {% endif %}
-        </div>
+        {% if page.previous.url %}
+          <a class="prev animsition-link" data-animsition-out-class="fade-out-right" href="{{ page.previous.url }}">Previous</a>
+        {% endif %}
+        {% if page.next.url %}
+          <a class="next animsition-link" data-animsition-out-class="fade-out-left" href="{{ page.next.url }}">Next</a>
+        {% endif %}
       </main>
   
       {% include footer.html %}

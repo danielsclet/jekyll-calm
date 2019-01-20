@@ -13,13 +13,13 @@ layout: default
   <section class="perfil-interets-skills">
     <ul class="perfil-skills">
       <li class="perfil-skill">Skills</li>
-      {% for skill in page.skills %}
+      {% for skill in site.skills %}
       <li class="perfil-skill">{{skill}}</li>
       {% endfor %}
     </ul>
     <ul class="perfil-interets">
       <li class="perfil-interet">Interests</li>
-      {% for interet in page.interets %}
+      {% for interet in site.interets %}
       <li class="perfil-interet">{{interet}}</li>
       {% endfor %}
     </ul>
@@ -28,7 +28,7 @@ layout: default
   <section class="perfil-formations-experiences">
     <ul class="perfil-formations">
       <li class="perfil-formation">Formation</li>
-      {% for formation in page.formations %}
+      {% for formation in site.formations %}
       <li class="perfil-formation">
         <h4>{{formation.name}}</h4>
         <p>{{formation.course}}</p>
@@ -38,7 +38,7 @@ layout: default
     </ul>
     <ul class="perfil-experiences">
       <li class="perfil-experience">Experience</li>
-      {% for experience in page.experiences %}
+      {% for experience in site.experiences %}
       <li class="perfil-experience">
         <h4>{{experience.name}}</h4>
         <p>{{experience.company}}</p>
