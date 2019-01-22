@@ -25,16 +25,23 @@
     <div class="animsition" data-animsition-in-class="fade-in" data-animsition-out-class="fade-out">
       {% include header.html %}
 
-      {% include post_header.html %}
+      <div class="banner">
+        <h1 class="banner-title">{{page.title}}</h1>
+        <h4 class="banner-date">{{ page.date | date: '%m/%d/%Y' }}</h4>
+        <a class="banner-link animsition-link" href="/" data-animsition-out-class="fade-out">Back</a>
+      </div>
   
       <main class="post container">
         {{content}}
   
         {% if page.previous.url %}
-          <a class="prev animsition-link" data-animsition-out-class="fade-out-right" href="{{ page.previous.url }}">Previous</a>
+          <a class="prevNext prev animsition-link" data-animsition-out-class="fade-out-right" href="{{ page.previous.url }}">
+            <div class="prev-name">{{ page.previous.title }}</div>
+            <div class="prev-arrow"><</div>
+          </a>
         {% endif %}
         {% if page.next.url %}
-          <a class="next animsition-link" data-animsition-out-class="fade-out-left" href="{{ page.next.url }}">Next</a>
+          <a class="prevNext next animsition-link" data-animsition-out-class="fade-out-left" href="{{ page.next.url }}">Next</a>
         {% endif %}
       </main>
   

@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.5.2)
+    addressable (2.6.0)
       public_suffix (>= 2.0.2, < 4.0)
     autoprefixer-rails (6.3.7)
       execjs
@@ -36,6 +36,7 @@ GEM
       autoprefixer-rails (~> 6.3.6)
     jekyll-feed (0.11.0)
       jekyll (~> 3.3)
+    jekyll-paginate (1.1.0)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
     jekyll-seo-tag (2.5.0)
@@ -77,6 +78,7 @@ DEPENDENCIES
   jekyll (~> 3.8.3)
   jekyll-autoprefixer
   jekyll-feed (~> 0.6)
+  jekyll-paginate
   jekyll-seo-tag
   tzinfo-data
   wdm (~> 0.1.0)
