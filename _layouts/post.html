@@ -7,6 +7,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.ico"/>
 
     <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     
@@ -37,11 +38,14 @@
         {% if page.previous.url %}
           <a class="prevNext prev animsition-link" data-animsition-out-class="fade-out-right" href="{{ page.previous.url }}">
             <div class="prev-name">{{ page.previous.title }}</div>
-            <div class="prev-arrow"><</div>
+            <div class="prev-arrow"><i class="fas fa-angle-double-left"></i></div>
           </a>
         {% endif %}
         {% if page.next.url %}
-          <a class="prevNext next animsition-link" data-animsition-out-class="fade-out-left" href="{{ page.next.url }}">Next</a>
+          <a class="prevNext next animsition-link" data-animsition-out-class="fade-out-right" href="{{ page.next.url }}">
+            <div class="prev-arrow"><i class="fas fa-angle-double-right"></i></div>
+            <div class="prev-name">{{ page.next.title }}</div>
+          </a>
         {% endif %}
       </main>
   

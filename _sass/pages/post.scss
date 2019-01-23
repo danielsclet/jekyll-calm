@@ -105,11 +105,14 @@
   .prevNext {
     width: 200px;
     height: 50px;
-    background-color: $color-grey;
+    background-color: $color-contrast;
     text-decoration: none;
     color: $color-white;
     position: fixed;
+    top: 50%;
     display: flex;
+    transition: .2s;
+    border: 1px solid $color-contrast;
 
     .prev-arrow {
       width: 50px;
@@ -117,7 +120,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      border: 1px solid black;
     }
 
     .prev-name {
@@ -126,17 +128,24 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      border: 1px solid black;
     }
   }
 
   .next {
-    top: 40%;
     right: 0;
+    transform: translateX(150px);
+
+    &:hover {
+      transform: translateX(0px);
+    }
   }
 
   .prev {
-    top: 40%;
     left: 0;
+    transform: translateX(-150px);
+
+    &:hover {
+      transform: translateX(0px);
+    }
   }
 }

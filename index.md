@@ -1,6 +1,5 @@
 ---
-title: Daniel Santos
+title: Calm Theme
 layout: blog
-description: Only a developer with many dreams
+description: A jekyll simple starter theme
 ---
-
